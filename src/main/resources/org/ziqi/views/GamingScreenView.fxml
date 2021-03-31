@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="m_FxmlRoot" prefHeight="800.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.ziqi.control.screenController.GamingScreenController">
+    <children>
+        <ImageView fitHeight="600.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true" styleClass="GamingBG">
+            <image>
+                <Image url="@../assets/images/TrailBG.png" />
+            </image>
+        </ImageView>
+        <GridPane fx:id="m_GridPane" prefHeight="800.0" prefWidth="600.0" AnchorPane.leftAnchor="0.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="800.0" minWidth="10.0" prefWidth="800.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints maxHeight="50.0" minHeight="0.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="750.0" minHeight="10.0" prefHeight="550.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="750.0" minHeight="10.0" prefHeight="193.5704345703125" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <ImageView fitHeight="114.0" fitWidth="590.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../assets/images/Bar.png" />
+                    </image>
+                    <GridPane.margin>
+                        <Insets left="3.0" top="40.0" />
+                    </GridPane.margin>
+                </ImageView>
+                <HBox prefHeight="32.0" prefWidth="409.0" spacing="15.0">
+                    <children>
+                        <Text fill="#8d3b3b" stroke="#904949" strokeType="OUTSIDE" styleClass="Title" text="PAOLUMU WITCH" wrappingWidth="408.9597969055176">
+                            <font>
+                                <Font size="27.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="28.0" top="28.0" />
+                            </HBox.margin>
+                        </Text>
+                        <ImageView fitHeight="35.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../assets/sprites/Concept/Sprite-002.png" />
+                            </image>
+                            <HBox.margin>
+                                <Insets left="20.0" top="25.0" />
+                            </HBox.margin>
+                     <effect>
+                        <InnerShadow choke="1.0" color="#8d3e3e" height="255.0" radius="127.0" width="255.0" />
+                     </effect>
+                        </ImageView>
+                    </children>
+                    <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </padding>
+               <GridPane.margin>
+                  <Insets left="40.0" top="10.0" />
+               </GridPane.margin>
+                </HBox>
+                <AnchorPane fx:id="m_LevelPane" prefHeight="626.0" prefWidth="598.0" GridPane.rowIndex="1" />
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2">
+               <children>
+                  <ImageView fitHeight="227.0" fitWidth="607.0" layoutX="-1.0" pickOnBounds="true" styleClass="GamingBG">
+                     <image>
+                        <Image url="@../assets/images/TrailBG.png" />
+                     </image>
+                  </ImageView>
+                      <ImageView fitHeight="235.0" fitWidth="633.0" layoutX="-16.0" layoutY="-11.0" pickOnBounds="true">
+                          <image>
+                              <Image url="@../assets/images/Panel.png" />
+                          </image>
+                      </ImageView>
+                  <StackPane fx:id="m_Instruction" layoutX="332.0" layoutY="42.0" prefHeight="36.0" prefWidth="168.0" styleClass="Instruction">
+                     <children>
+                        <ImageView fitHeight="23.0" fitWidth="153.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../assets/images/ButtonBG.png" />
+                           </image>
+                           <effect>
+                              <Glow level="0.4" />
+                           </effect>
+                        </ImageView>
+                        <Text fx:id="m_RestartButtonText11" fill="#964e4e" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Button" text="FLY - STEP x 2" />
+                        <ImageView fitHeight="79.0" fitWidth="79.0">
+                           <image>
+                              <Image url="@../assets/images/Direction.png" />
+                           </image>
+                           <StackPane.margin>
+                              <Insets right="250.0" />
+                           </StackPane.margin>
+                           <effect>
+                              <Glow level="0.41" />
+                           </effect>
+                        </ImageView>
+                     </children>
+                     <effect>
+                        <DropShadow color="#a85151" height="1.0" offsetX="3.0" offsetY="4.0" radius="0.0" spread="0.31" width="0.0" />
+                     </effect>
+                  </StackPane>
+                            <StackPane fx:id="m_RestartButton" layoutX="376.0" layoutY="167.0" prefHeight="23.0" prefWidth="54.0">
+                                <children>
+                                    <ImageView fitHeight="32.0" fitWidth="110.0" pickOnBounds="true">
+                                        <image>
+                                            <Image url="@../assets/images/ButtonBG.png" />
+                                        </image>
+                           <effect>
+                              <Glow level="0.4" />
+                           </effect>
+                                    </ImageView>
+                                    <Text fx:id="m_RestartButtonText" fill="#964e4e" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Button" text="RESTART" />
+                                </children>
+                            </StackPane>
+                  <StackPane fx:id="m_NextLevelButton" layoutX="376.0" layoutY="105.0" prefHeight="23.0" prefWidth="54.0">
+                     <children>
+                        <ImageView fitHeight="32.0" fitWidth="111.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../assets/images/ButtonBG.png" />
+                           </image>
+                           <effect>
+                              <Glow level="0.4" />
+                           </effect>
+                        </ImageView>
+                        <Text fx:id="m_NextLevelButtonText" fill="#964e4e" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Button" text="NEXT LEVEL" />
+                     </children>
+                  </StackPane>
+                  <StackPane fx:id="m_BackHomeButton" layoutX="376.0" layoutY="135.0" prefHeight="23.0" prefWidth="54.0">
+                     <children>
+                        <ImageView fitHeight="33.0" fitWidth="111.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../assets/images/ButtonBG.png" />
+                           </image>
+                           <effect>
+                              <Glow level="0.4" />
+                           </effect>
+                        </ImageView>
+                        <Text fx:id="m_RestartButtonText1" fill="#964e4e" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Button" text="BACK HOME" />
+                     </children>
+                  </StackPane>
+                          <VBox fx:id="m_TextVBox" layoutX="69.0" layoutY="53.0" prefHeight="197.0" prefWidth="200.0">
+                              <children>
+                                  <HBox prefHeight="20.0" prefWidth="150.0" spacing="10.0">
+                                      <children>
+                                          <Text fill="#964e4e" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Text" text="SET NAME:" />
+                                          <Text fx:id="m_SetName" fill="#964e4e" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Text" text="setname" />
+                                      </children>
+                           <padding>
+                              <Insets bottom="7.0" />
+                           </padding>
+                                  </HBox>
+                                  <HBox prefHeight="20.0" prefWidth="150.0" spacing="10.0">
+                                      <children>
+                                          <Text fill="#964e4e" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Text" text="LEVEL NAME:" />
+                                          <Text fx:id="m_LevelName" fill="#964e4e" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Text" text="levelname" />
+                                      </children>
+                           <padding>
+                              <Insets bottom="7.0" />
+                           </padding>
+                                  </HBox>
+                                  <HBox prefHeight="20.0" prefWidth="150.0" spacing="10.0">
+                                      <children>
+                                          <Text fill="#964e4e" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Text" text="MOVE COUNT:" />
+                                          <Text fx:id="m_MoveCount" fill="#964e4e" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Text" text="0" />
+                                      </children>
+                           <padding>
+                              <Insets bottom="7.0" />
+                           </padding>
+                                  </HBox>
+                                  <HBox prefHeight="20.0" prefWidth="150.0" spacing="10.0">
+                                      <children>
+                                          <Text fill="#964e4e" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Text" text="TIME:" />
+                                          <Text fx:id="m_TimeString" fill="#964e4e" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Text" text="00:00" wrappingWidth="102.8359375" />
+                                      </children>
+                           <padding>
+                              <Insets bottom="7.0" />
+                           </padding>
+                                  </HBox>
+                              </children>
+                              <padding>
+                                  <Insets bottom="30.0" left="20.0" top="30.0" />
+                              </padding>
+                          </VBox>
+               </children>
+            </AnchorPane>
+            </children>
+        </GridPane>
+          <HBox prefHeight="100.0" prefWidth="200.0">
+              <children>
+            <HBox prefHeight="197.0" prefWidth="320.0" />
+              </children>
+          </HBox>
+    </children>
+</AnchorPane>

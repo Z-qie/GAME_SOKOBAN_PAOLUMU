@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="m_FxmlRoot" prefHeight="800.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.ziqi.control.screenController.StartScreenController">
+   <children>
+      <ImageView fitHeight="800.0" fitWidth="600.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/images/StartScreenBG.gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="141.0" fitWidth="141.0" layoutX="226.0" layoutY="79.0">
+         <image>
+            <Image url="@../assets/sprites/WITCH/PUSHING_DOWN.gif" />
+         </image>
+      </ImageView>
+      <Text fx:id="m_GameTitle" fill="WHITE" stroke="#964e4eed" strokeType="OUTSIDE" strokeWidth="2.0" style="-fx-font-weight: 700; -fx-scale-y: 1;" styleClass="Title" text="PAOLUMU WITCH!" textAlignment="CENTER" wrappingWidth="600.0" y="90.0" />
+      <StackPane layoutX="100.0" layoutY="160.0" prefHeight="550.0" prefWidth="300.0">
+         <children>
+            <Rectangle fx:id="m_MenuPane" arcHeight="10.0" arcWidth="10.0" fill="WHITE" height="430.0" opacity="0.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="300.0" />
+            <VBox fx:id="m_MenuPanel" prefHeight="404.0" prefWidth="400.0" spacing="60.0">
+               <children>
+                  <StackPane fx:id="m_NewGameButton" prefHeight="38.0" prefWidth="400.0">
+                     <children>
+                        <Text fill="WHITE" stroke="#964e4eed" strokeType="OUTSIDE" styleClass="Button" text="NEW GAME" textAlignment="CENTER" wrappingWidth="400.0" x="200.0" y="100.0" />
+                     </children>
+                  </StackPane>
+                  <StackPane fx:id="m_ScoreBoardButton" prefHeight="38.0" prefWidth="400.0">
+                     <children>
+                        <Text fill="WHITE" stroke="#964e4eed" strokeType="OUTSIDE" styleClass="Button" text="SCORE BOARD" textAlignment="CENTER" wrappingWidth="400.0" x="200.0" y="100.0" />
+                     </children>
+                  </StackPane>
+                  <StackPane fx:id="m_LevelSetButton" prefHeight="38.0" prefWidth="400.0">
+                     <children>
+                        <Text fill="WHITE" stroke="#964e4eed" strokeType="OUTSIDE" styleClass="Button" text="LEVEL SET" textAlignment="CENTER" wrappingWidth="400.0" x="200.0" y="100.0" />
+                     </children>
+                  </StackPane>
+                  <StackPane fx:id="m_QuitButton" prefHeight="38.0" prefWidth="400.0">
+                     <children>
+                        <Text fill="WHITE" stroke="#964e4eed" strokeType="OUTSIDE" styleClass="Button" text="QUIT" textAlignment="CENTER" wrappingWidth="400.0" x="200.0" y="100.0" />
+                     </children>
+                  </StackPane>
+               </children>
+               <padding>
+                  <Insets top="120.0" />
+               </padding>
+            </VBox>
+         </children>
+      </StackPane>
+      <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="376.0" layoutY="-16.0" visible="false">
+         <image>
+            <Image url="@../assets/sprites/WITCH/IDLE_UP.gif" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

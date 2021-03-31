@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="m_FxmlRoot" prefHeight="800.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.ziqi.control.screenController.LevelSetScreenController">
+   <children>
+      <ImageView fitHeight="800.0" fitWidth="600.0" pickOnBounds="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <image>
+            <Image url="@../assets/images/LevelSetBG.png" />
+         </image>
+         <viewport>
+            <Rectangle2D />
+         </viewport>
+      </ImageView>
+      <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="270.0" layoutY="250.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/sprites/WITCH/IDLE_DOWN.gif" />
+         </image>
+         <effect>
+            <Glow level="0.52" />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="110.0" fitWidth="100.0" layoutX="245.0" layoutY="280.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/sprites/DIAMOND/DIAMOND_CLEFT.gif" />
+         </image>
+         <effect>
+            <DropShadow blurType="TWO_PASS_BOX" color="#ffc4f7" height="31.69" radius="20.625" width="52.81" />
+         </effect>
+      </ImageView>
+      <Text fx:id="m_SetName" fill="#ab7878" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="SetName" text="SET NAME" textAlignment="CENTER" wrappingWidth="600.0">
+         <font>
+            <Font size="50.0" />
+         </font>
+         <effect>
+            <Glow level="1.0" />
+         </effect>
+      </Text>
+      <HBox prefHeight="130.0" prefWidth="516.0" spacing="20.0" AnchorPane.bottomAnchor="0.0">
+         <children>
+            <ImageView fx:id="m_Set1" fitHeight="150.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/sprites/CRATE/CRATE_RUNE_OLD.gif" />
+               </image>
+               <effect>
+                  <DropShadow color="#000000ba" height="42.12" offsetY="8.0" radius="19.052500000000002" width="36.09" />
+               </effect>
+            </ImageView>
+            <ImageView fx:id="m_Set2" fitHeight="150.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/sprites/CRATE/CRATE_RUNE_OLD.gif" />
+               </image>
+               <effect>
+                  <DropShadow color="#000000ba" height="42.12" offsetY="8.0" radius="19.052500000000002" width="36.09" />
+               </effect>
+            </ImageView>
+            <ImageView fx:id="m_Set3" fitHeight="150.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/sprites/CRATE/CRATE_RUNE_OLD.gif" />
+               </image>
+               <effect>
+                  <DropShadow color="#000000ba" height="42.12" offsetY="8.0" radius="19.052500000000002" width="36.09" />
+               </effect>
+            </ImageView>
+            <ImageView fx:id="m_Set4" fitHeight="150.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/sprites/CRATE/CRATE_RUNE_OLD.gif" />
+               </image>
+               <effect>
+                  <DropShadow color="#000000ba" height="42.12" offsetY="8.0" radius="19.052500000000002" width="36.09" />
+               </effect>
+            </ImageView>
+         </children>
+         <padding>
+            <Insets left="150.0" />
+         </padding>
+      </HBox>
+      <Text fx:id="m_Prompt" fill="WHITE" layoutY="775.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Text" text="CHOOSE A MAP" textAlignment="CENTER" wrappingWidth="590.0" AnchorPane.leftAnchor="0.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <effect>
+            <Glow level="1.0" />
+         </effect>
+      </Text>
+      <Text fx:id="m_BackHomeButton" fill="#a1a1a1" layoutX="10.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Text" text="BACK" textAlignment="CENTER">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <effect>
+            <Glow level="1.0" />
+         </effect>
+      </Text>
+   </children>
+   <effect>
+      <Glow level="0.39" />
+   </effect>
+</AnchorPane>

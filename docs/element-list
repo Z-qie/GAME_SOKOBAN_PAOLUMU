@@ -1,0 +1,12 @@
+module:ZiqiYang
+org.ziqi
+org.ziqi.control
+org.ziqi.control.screenController
+org.ziqi.gameEngine
+org.ziqi.gameEngine.base
+org.ziqi.gameEngine.manager
+org.ziqi.gameEngine.viewPlayer
+org.ziqi.model
+org.ziqi.view
+org.ziqi.view.popUp
+org.ziqi.view.screen
